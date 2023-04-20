@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/styles.css">
+  <title>Tailwind css</title>
+</head>
+
+<body class='bg-white dark:bg-slate-900 font-main'>
+  <div class="max-w-screen-xl mx-auto h-screen grid grid-rows-layout">
+    <!-- header -->
+    <header
+      class='dark:border-b-slate-400 p-2 pb-4 lg:border-b-8 md:border-b-4 sm:border-b-2 border-b-orange-600 border-dotted flex items-center justify-between h-16'>
+      <a class='dark:text-slate-400 dark:shadow-slate-400 inline-block py-2 px-3 rounded-full uppercase font-bold text-logo-main shadow-md shadow-pink-900 focus:outline-none focus:ring focus:ring-pink-300'
+        href="#">ALtermaRRin</a>
+      <nav class='hidden md:flex items-center'>
+        <ul class='inline-flex items-center'>
+          <li><a class='header__link' href="#">Home</a></li>
+          <li><a class='header__link' href="#">About</a></li>
+          <li><a class='header__link' href="#">Contact</a></li>
+        </ul>
+        <ul class='inline-flex items-center'>
+          <li>
+            <button class='header__btn'>Login</button>
+          </li>
+          <li>
+            <button class='header__btn'>Register</button>
+          </li>
+        </ul>
+      </nav>
+      <button class='inline-block md:hidden dark:text-slate-400'>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+      </button>
+    </header>
+    <div>
+      <!-- breadcrumbs -->
+      <div class='px-2 flex items-center'>
+        <div class='py-4 overflow-y-auto whitespace-nowrap flex items-center'>
+          <a class='dark:text-slate-400 text-gray-600 font-semibold hover:text-gray-900 focus:outline-none focus:ring focus:ring-orange-300 transition-all duration-500'
+            href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+
+          </a>
+          <span class='mx-2 text-gray-300'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </span>
+          <a class='dark:text-slate-400 text-gray-600 font-semibold hover:text-gray-900 focus:outline-none focus:ring focus:ring-orange-300 transition-all duration-500'
+            href="#">News</a>
+          <span class='mx-2 text-gray-300'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </span>
+          <a class='dark:text-slate-400 text-gray-600 font-semibold hover:text-gray-900 focus:outline-none focus:ring focus:ring-orange-300 transition-all duration-500'
+            href="#">Tech</a>
+        </div>
+      </div>
+
+      <!-- banners -->
+      <section class='px-2 lg:flex lg:space-x-2'>
+
+        <a class='w-full lg:w-2/3 inline-block bg-pink-300 h-96 mb-4 relative rounded overflow-hidden focus:outline-none focus:ring focus:ring-pink-300'
+          href="">
+          <div class='absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70'></div>
+          <img class='absolute left-0 top-0 w-full h-full z-0 object-cover' src="./public/images/image2.jpg"
+            alt="news-1">
+          <div class='absolute p-4 bottom-0 left-0 z-20 '>
+            <h2 class=' text-4xl font-semibold text-gray-100 leading-tight'>Lorem ipsum dolor sit amet consectetur
+              adipisicing.</h2>
+            <span
+              class='bg-gradient-to-tr from-indigo-800 to-blue-400 text-white inline-flex items-center justify-center px-4 py-1 mb-2'>React</span>
+            <div class='flex mt-3'>
+              <img class='h-10 w-10 rounded-full mr-2 object-cover' src="https://randomuser.me/api/portraits/men/15.jpg"
+                alt="author">
+              <div>
+                <p class=' font-semibold text-gray-200 text-sm'>Lohn Doe</p>
+                <time class='text-xs text-gray-400'>20 April</time>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class='w-full lg:w-1/3 inline-block bg-orange-300 h-96 mb-4 relative rounded overflow-hidden focus:outline-none focus:ring focus:ring-orange-300'
+          href="">
+          <div class='absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70'></div>
+          <img class='absolute left-0 top-0 w-full h-full z-0 object-cover' src="./public/images/image1.jpg"
+            alt="news-2">
+          <div class='absolute p-4 bottom-0 left-0 z-20'>
+            <h2 class=' text-4xl font-semibold text-gray-100 leading-tight'>Consectetur, dignissimos. Nobis ipsam</h2>
+            <span
+              class='bg-gradient-to-tr from-green-900 to-green-200 text-white inline-flex items-center justify-center px-4 py-1 mb-2'>Vue</span>
+            <div class='flex mt-3'>
+              <img class='h-10 w-10 rounded-full mr-2 object-cover'
+                src="https://randomuser.me/api/portraits/women/18.jpg" alt="author">
+              <div>
+                <p class=' font-semibold text-gray-200 text-sm'>Alice Moor</p>
+                <time class='text-xs text-gray-400'>21 April</time>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+      <main class='lg:flex'>
+        <div class='w-full lg:w-2/3'>
+          <!-- post-cards -->
+          <section class='px-2'>
+            <a class='block w-full lg:flex lg:space-x-4 mb-10' href="#">
+              <img class='w-full h-48 lg:w-48 opacity-80 object-cover' src="./public/images/img-3.jpg" alt="img1">
+              <div class='flex flex-col justify-between'>
+                <div>
+                  <h3 class='dark:text-slate-100 mb-2 text-gray-700 font-bold text-2xl'>Lorem ipsum, dolor sit amet
+                    consectetur
+                    adipisicing.
+                  </h3>
+                  <p class='dark:text-slate-400 text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis omnis sint
+                    ex
+                    ea harum deleniti quis
+                    dolor eaque earum magnam voluptate quisquam distinctio consequuntur, ratione esse explicabo?
+                    Sapiente,
+                    voluptas corporis?</p>
+                </div>
+                <div class='flex mt-3'>
+                  <img class='h-10 w-10 rounded-full mr-2 object-cover'
+                    src="https://randomuser.me/api/portraits/men/15.jpg" alt="author">
+                  <div>
+                    <p class='font-semibold text-gray-400 text-sm'>Lohn Doe</p>
+                    <time class='text-xs text-gray-400'>20 April</time>
+                  </div>
+                </div>
+              </div>
+
+            </a>
+            <a class='block w-full lg:flex lg:space-x-4 mb-10' href="#">
+              <img class='w-full h-48 lg:w-48 opacity-80 object-cover' src="./public/images/img-4.jpg" alt="img1">
+              <div class='flex flex-col justify-between'>
+                <div>
+                  <h3 class='dark:text-slate-100 mb-2 text-gray-700 font-bold text-2xl'> Reiciendis omnis sint ex ea
+                    harum deleniti</h3>
+                  <p class='dark:text-slate-400 text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Neque quo ad qui
+                    unde.
+                    Minus totam a vero ab aperiam quas nisi iste neque explicabo deserunt et nihil accusamus quaerat,
+                    facere
+                    esse reprehenderit officia id enim. Sapiente eaque inventore praesentium quos.</p>
+                </div>
+                <div class='flex mt-3'>
+                  <img class='h-10 w-10 rounded-full mr-2 object-cover'
+                    src="https://randomuser.me/api/portraits/men/10.jpg" alt="author">
+                  <div>
+                    <p class='font-semibold text-gray-400 text-sm'>John Doe</p>
+                    <time class='text-xs text-gray-400'>15 April</time>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class='block w-full lg:flex lg:space-x-4 mb-10' href="#">
+              <img class='w-full h-48 lg:w-48 opacity-80 object-cover' src="./public/images/img-5.jpg" alt="img1">
+              <div class='flex flex-col justify-between'>
+                <div>
+                  <h3 class='dark:text-slate-100 mb-2 text-gray-700 font-bold text-2xl'>Minus totam a vero ab aperiam
+                    quas</h3>
+                  <p class='dark:text-slate-400 text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda culpa eum
+                    ipsam
+                    saepe dolorum quidem? Consectetur, dignissimos. Nobis ipsam quia labore voluptatem maxime nemo
+                    minima
+                    rerum, molestiae laboriosam, ipsa, sint molestias nulla obcaecati laudantium hic?</p>
+                </div>
+                <div class='flex mt-3'>
+                  <img class='h-10 w-10 rounded-full mr-2 object-cover'
+                    src="https://randomuser.me/api/portraits/women/15.jpg" alt="author">
+                  <div>
+                    <p class='font-semibold text-gray-400 text-sm'>Jane Low</p>
+                    <time class='text-xs text-gray-400'>21 March</time>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <!-- pagination -->
+          <div class='mt-20 mb-10 '>
+            <ul class='flex justify-center'>
+              <li><a class='pagination__item rounded-l-2xl' href="#">Previous</a></li>
+              <li><a class='pagination__item pagination__item_active' href="#">1</a></li>
+              <li><a class='pagination__item rounded-full' href="#">2</a></li>
+              <li><a class='pagination__item rounded-full' href="#">3</a></li>
+              <li><a class='pagination__item rounded-full' href="#">4</a></li>
+              <li><a class='pagination__item rounded-full' href="#">5</a></li>
+              <li><a class='pagination__item rounded-r-2xl' href="#">Next</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='w-full  px-2 md:flex md:items-center md:space-x-10 lg:block lg:space-x-0 lg:w-1/3'>
+          <!-- topics -->
+          <div class='mb-10 mt-5 w-full md:w-1/2 lg:w-full'>
+            <h5 class='dark:text-slate-400 font-bold text-lg uppercase text-gray-700 mb-2'>
+              Popular News
+            </h5>
+            <ul>
+              <li
+                class='dark:border-slate-900 dark:hover:border-slate-400 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-500'>
+                <a class='dark:text-slate-400 flex items-center text-gray-600' href="#">
+                  <span
+                    class='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-200 to-green-900 rounded-full'></span>
+                  Vue
+                  <span class='dark:text-slate-400 text-gray-500 ml-auto'>23 articles</span>
+                </a>
+              </li>
+              <li
+                class='dark:border-slate-900 dark:hover:border-slate-400 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-500'>
+                <a class='dark:text-slate-400 flex items-center text-gray-600' href="#">
+                  <span
+                    class='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-200 to-blue-900 rounded-full'></span>
+                  React
+                  <span class='dark:text-slate-400 text-gray-500 ml-auto'>7 articles</span>
+                </a>
+              </li>
+              <li
+                class='dark:border-slate-900 dark:hover:border-slate-400 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-500'>
+                <a class='dark:text-slate-400 flex items-center text-gray-600' href="#">
+                  <span class='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-200 to-red-900 rounded-full'></span>
+                  Angular
+                  <span class='dark:text-slate-400 text-gray-500 ml-auto'>15 articles</span>
+                </a>
+              </li>
+              <li
+                class='dark:border-slate-900 dark:hover:border-slate-400 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-500'>
+                <a class='dark:text-slate-400 flex items-center text-gray-600' href="#">
+                  <span
+                    class='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-200 to-orange-900 rounded-full'></span>
+                  Svelte
+                  <span class='dark:text-slate-400 text-gray-500 ml-auto'>20 articles</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class='w-full md:w-1/2 lg:w-full'>
+            <!-- divider -->
+            <div class='border-t-4 border-dotted border-gray-400 md:hidden lg:block'></div>
+
+            <!-- subscribe -->
+            <div class='my-5 px-2 '>
+              <h5 class='dark:text-slate-400 font-bold text-lg uppercase text-gray-700 mb-2'>Subscribe</h5>
+              <p class='dark:text-slate-400 text-gray-600 mb-4
+      '>Subscribe to our newsletter</p>
+              <input type="email" placeholder='your email address'
+                class='dark:bg-slate-800 text-gray-700 font-semibold  bg-gray-100 p-2 w-full border rounded-t hover:border-orange-700 focus:outline-none focus:ring focus:ring-orange-300 transition-all duration-500' />
+              <button
+                class='dark:bg-slate-700 dark:border-slate-400 dark:text-slate-400 dark:hover:bg-orange-600/70 py-1 px-3 w-full border-2 rounded-t rounded-full border-orange-600 bg-orange-600 text-white text-lg font-semibold hover:text-white hover:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300 transition-all duration-500'>Subscribe</button>
+            </div>
+
+            <!-- divider -->
+            <div class='border-t-4 border-dotted border-gray-400 md:hidden lg:block'></div>
+          </div>
+
+        </div>
+
+
+      </main>
+    </div>
+    <!-- footer -->
+    <footer
+      class='dark:border-slate-400 mt-10 sm:border-t-2 md:border-t-4 lg:border-t-8   border-orange-600 border-dotted py-10 px-2'>
+      <div class='md:flex'>
+        <!-- 5-тиколоночная сетка -->
+        <div class='mb-5 w-full md:w-2/5'>
+          <h6 class='dark:text-slate-400 font-semibold text-gray-700 mb-3'>Company</h6>
+          <ul>
+            <li><a class='footer__link' href="#">Team</a></li>
+            <li><a class='footer__link' href="#">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class='w-full md:w-2/5 mb-5'>
+          <h6 class='dark:text-slate-400 font-semibold text-gray-700 mb-3'>Content</h6>
+          <ul>
+            <li><a class='footer__link' href="#">Block</a></li>
+            <li><a class='footer__link' href="#">Policy</a></li>
+            <li><a class='footer__link' href="#">Documentation</a></li>
+          </ul>
+        </div>
+
+        <div class='w-full md:w-1/5'>
+          <h6 class='dark:text-slate-400 font-semibold text-gray-700 mb-3'>Contuct Us</h6>
+          <ul class='flex'>
+            <li class='mr-2'>
+              <a class='footer__link' href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                </svg>
+              </a>
+            </li>
+            <li class='mr-2'>
+              <a class='footer__link' href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round"
+                    d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class='footer__link' href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

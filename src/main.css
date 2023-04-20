@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header__link {
+  @apply dark:text-slate-300 dark:hover:text-pink-700 inline-block py-3 px-2 border-b-2 border-transparent hover:text-pink-900 hover:border-pink-900
+  focus:outline-none focus:ring focus:ring-pink-300 text-gray-500 font-semibold;
+}
+
+.header__btn {
+  @apply dark:text-slate-400 dark:hover:border-pink-900 dark:hover:text-slate-200 dark:border-slate-400 ml-2 py-1 px-3 border-2 rounded-full border-pink-900 text-pink-900 text-lg font-semibold hover:text-white hover:bg-pink-900 focus:outline-none focus:ring focus:ring-pink-300 transition-all duration-500;
+}
+
+@layer components {
+  .pagination__item {
+    @apply dark:text-slate-400 inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring focus:ring-orange-300 transition-all duration-500 dark:hover:dark:text-slate-400 dark:hover:bg-gray-700 dark:border-gray-700;
+  }
+
+  .pagination__item_active{
+    @apply border-orange-600 font-semibold text-orange-600 focus:outline-none focus:ring focus:ring-orange-300 rounded-full cursor-default hover:bg-inherit hover:text-orange-600 transition-all duration-500 dark:border-orange-600
+  }
+}
+
+.footer__link{
+  @apply dark:text-slate-400 inline-block py-3 px-2  text-gray-500 hover:underline decoration-2 decoration-orange-600 decoration-wavy focus:outline-none focus:ring focus:ring-orange-300 transition-all duration-500
+}
